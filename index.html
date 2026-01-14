@@ -3,177 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cúcuta por Días | Loft Boutique</title>
-  <meta name="description" content="Loft Boutique en el centro de Cúcuta. Estadías elegantes, ubicación premium y atención personalizada." />
-
+  <title>Cúcuta por Días | Apartamentos Amoblados</title>
+  <meta name="description" content="Apartamentos amoblados en el centro de Cúcuta. Aire acondicionado, capacidad hasta 4 personas, excelente ubicación y atención 24h." />
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-      background: #fafafa;
-      color: #2b2b2b;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #8e1b1b, #c62828);
-      text-align: center;
-      padding: 1.8rem 1rem;
-    }
-
-    header img {
-      max-width: 420px;
-      width: 100%;
-      height: auto;
-    }
-
-    header h1 {
-      margin: .5rem 0 0;
-      color: #fff;
-      letter-spacing: 2px;
-      font-size: 2.2rem;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2.5rem 1.5rem;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .intro {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 3rem;
-      color: #555;
-    }
-
+    body { margin: 0; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: #2b2b2b; background: #fafafa; line-height: 1.6; }
+    header { background: #ffffff; color: #2b2b2b; padding: 1.2rem 1rem 0.8rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.8rem; letter-spacing: 2px; font-weight: 600; }
+    header p { margin-top: 1.2rem; font-size: 1.15rem; opacity: .9; }
+    header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+    header p { margin-top: 1rem; font-size: 1.1rem; opacity: .95; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin-top: .5rem; }
+    .container { max-width: 1100px; margin: auto; padding: 2rem; }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
 
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 2rem;
-      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
+    .card { background: #ffffff; border-radius: 20px; padding: 2rem; box-shadow: 0 15px 35px rgba(0,0,0,.08); display: flex; flex-direction: column; justify-content: space-between; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 25px 45px rgba(0,0,0,.12); }
 
-    .card h3 {
-      margin-top: 0;
-      color: #c62828;
-    }
+    .card { border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; box-shadow: 0 4px 10px rgba(0,0,0,.05); }
+    .card h3 { margin-top: 0; color: #c62828; }
+    .cta { background: linear-gradient(135deg, #ffffff, #f5f5f5); padding: 4rem 2rem; text-align: center; }
 
-    .cta {
-      background: #f5f5f5;
-      text-align: center;
-      padding: 3rem 1.5rem;
-      margin-top: 3rem;
-      border-radius: 18px;
-    }
-
+    .cta { background: #f5f5f5; padding: 2rem; text-align: center; }
     .btn {
       display: inline-block;
-      margin-top: 1.5rem;
-      background: #25D366;
+      margin-top: 1.2rem;
+      background: #e57373;
       color: #fff;
-      padding: .9rem 2rem;
-      border-radius: 40px;
+      padding: .6rem 1.4rem;
+      border-radius: 30px;
       text-decoration: none;
-      font-weight: 600;
-      letter-spacing: .5px;
+      font-weight: 500;
+      font-size: .95rem;
     }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: .9rem;
-      margin-top: 3rem;
-    }
-
-    .rating {
-      color: #fbc02d;
-      font-weight: bold;
-    }
+    footer { background: #222; color: #ccc; padding: 1.5rem; text-align: center; font-size: .9rem; }
+    .rating { color: #fbc02d; font-weight: bold; }
   </style>
 </head>
-
 <body>
 
 <header>
-  <img src="logo.png" alt="Cúcuta por Días">
-  <h1>CÚCUTA POR DÍAS</h1>
+  <img src="logo.png" alt="Cúcuta por Días" style="max-width:420px; width:100%; height:auto; margin-bottom:.5rem;" />
+  <h1 style="margin:0; font-size:2.2rem; letter-spacing:2px;">CÚCUTA POR DÍAS</h1>
 </header>
 
-<section class="container">
-  <p class="intro">
-    Loft Boutique en el corazón de Cúcuta, pensado para huéspedes que valoran
-    comodidad, diseño y una ubicación privilegiada.
-  </p>
+<section class="container" style="padding-top:1rem;">
+  <p style="text-align:center; font-style:italic; color:#555; margin-bottom:2rem;">“Preferido por huéspedes que valoran comodidad, ubicación y una atención confiable.”</p>
+  <h2>Una estadía elegante en el corazón de Cúcuta</h2>
+  <p>Un espacio diseñado para quienes valoran la comodidad, la tranquilidad y una ubicación privilegiada. Ideal para ejecutivos, parejas y viajeros que buscan una experiencia superior durante su visita a la ciudad.</p>
 
   <div class="grid">
-
     <div class="card">
       <h3>CentralLoft 1</h3>
-      <p>
-        <strong>Amplio, moderno y elegante.</strong> Ubicado a solo
-        <strong>1 cuadra del Parque Santander</strong> y
-        <strong>3 cuadras del Centro Comercial Ventura Plaza</strong>.
-      </p>
-      <p>
-        Ideal para parejas, ejecutivos o viajeros que buscan comodidad y espacio
-        en el centro de la ciudad.
-      </p>
+      <p><strong>Disfruta de una estadía cómoda y fresca en pleno corazón de Cúcuta.</strong> Este moderno y amplio apartamento está ubicado a 1 cuadra del Parque Santander y a 3 cuadras del Centro Comercial Ventura Plaza.</p>
+      <p>🚶‍♂️ A pocos minutos caminando de supermercados, restaurantes y transporte público.</p>
+      <ul>
+        <li>🛏️ 1 habitación con cama doble</li>
+        <li>🛋️ Sofá cama doble</li>
+        <li>❄️ Aire acondicionado</li>
+        <li>🍳 Cocina equipada</li>
+        <li>🚿 Baño privado</li>
+        <li>📺 TV</li>
+      </ul>
+      <a class="btn" href="https://www.airbnb.com.co/rooms/1416075799572586341" target="_blank" style="background:#c62828;">Ver disponibilidad en Airbnb</a>
     </div>
 
     <div class="card">
       <h3>CentralLoft 2</h3>
-      <p>
-        <strong>Más íntimo y privado.</strong> Perfecto para descansar después
-        de un día de trabajo o turismo.
-      </p>
-      <p>
-        Ubicado en la esquina del <strong>Parque Santander</strong>,
-        cerca de restaurantes, bancos y comercio.
-      </p>
+      <p><strong>Un espacio más compacto, privado y tranquilo, ideal para descansar en el centro de la ciudad.</strong></p>
+      <p>🚶‍♂️ Ubicado en el centro de Cúcuta, a pasos del Parque Santander.</p>
+      <ul>
+        <li>🛏️ 1 habitación con cama doble</li>
+        <li>🛋️ Sofá cama doble</li>
+        <li>❄️ Aire acondicionado</li>
+        <li>🍳 Cocina equipada</li>
+        <li>🚿 Baño privado</li>
+        <li>📺 TV</li>
+      </ul>
+      <a class="btn" href="https://www.airbnb.com.co/rooms/1405089992682998972" target="_blank" style="background:#c62828;">Ver disponibilidad en Airbnb</a>
     </div>
+  </div>
 
   </div>
 </section>
 
 <section class="container">
-  <h2>Opiniones de nuestros huéspedes</h2>
-  <p class="intro">
-    Los visitantes destacan la limpieza, la excelente ubicación y la atención
-    personalizada.
-  </p>
-
-  <div class="cta">
-    <p class="rating">★ 4.5 estrellas en Airbnb</p>
-    <p style="font-style:italic;">
-      “Excelente ubicación, muy limpio y cómodo. Volveríamos sin dudarlo.”
-    </p>
-
-    <p style="margin-top:2rem; font-size:1.3rem; font-weight:600;">
-      💰 Mejor precio reservando directo por WhatsApp
-    </p>
-
-    <a class="btn" href="https://wa.me/573234882747" target="_blank">
-      Reservar por WhatsApp
-    </a>
+  <h2>Ubicación privilegiada</h2>
+  <p>Nos encontramos en el centro de la ciudad, con fácil acceso a comercio, restaurantes, bancos y transporte.</p>
+  <div style="border-radius:20px; overflow:hidden; box-shadow:0 15px 35px rgba(0,0,0,.1); margin-top:1.5rem;">
+    <iframe src="https://www.google.com/maps?q=Avenida+4+%2311-17+Centro+C%C3%BAcuta+Colombia&output=embed" width="100%" height="350" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 
+<section class="cta">
+  <h2>Opiniones de nuestros huéspedes</h2>
+  <p style="max-width:700px; margin:1rem auto;">Nuestros huéspedes destacan la limpieza, la excelente ubicación y la atención personalizada. Contamos con una calificación promedio de <strong>4.5 estrellas en Airbnb</strong>.</p>
+  <p style="font-style:italic; color:#555;">“Excelente ubicación, muy limpio y cómodo. Volveríamos sin dudarlo.”</p>
+  <p style="margin-top:2rem; font-size:1.3rem; font-weight:600;">💰 Mejor precio reservando directo por WhatsApp</p>
+  <a class="btn" href="https://wa.me/573234882747" target="_blank" style="margin-top:1rem;">Reservar por WhatsApp</a>
+</section>
+
 <footer>
-  © 2026 Cúcuta por Días · Loft Boutique · Centro de Cúcuta
+  <p>© 2026 Cúcuta por Días – Rentas cortas en el centro de Cúcuta</p>
 </footer>
 
 </body>
