@@ -2,16 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Cúcuta por Días</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cúcuta por Días | Loft Boutique</title>
+  <meta name="description" content="Loft Boutique en el centro de Cúcuta. Estadías elegantes, ubicación premium y atención personalizada." />
+
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f7f7f7; }
-    header { background:#b71c1c; padding:1.5rem; text-align:center; }
-    header img { max-width:380px; width:100%; }
-    section { max-width:900px; margin:2rem auto; padding:0 1rem; }
-    .card { background:#fff; padding:1.5rem; margin-bottom:1.5rem; border-radius:8px; }
-    .cta { text-align:center; background:#fff; padding:2rem; border-radius:8px; }
-    .btn { display:inline-block; margin-top:1rem; padding:0.9rem 1.4rem; background:#25D366; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: #fafafa;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8e1b1b, #c62828);
+      text-align: center;
+      padding: 1.8rem 1rem;
+    }
+
+    header img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+    }
+
+    header h1 {
+      margin: .5rem 0 0;
+      color: #fff;
+      letter-spacing: 2px;
+      font-size: 2.2rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #c62828;
+    }
+
+    .cta {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 3rem 1.5rem;
+      margin-top: 3rem;
+      border-radius: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #25D366;
+      color: #fff;
+      padding: .9rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .9rem;
+      margin-top: 3rem;
+    }
+
+    .rating {
+      color: #fbc02d;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -19,35 +110,59 @@
 
 <header>
   <img src="logo.png" alt="Cúcuta por Días">
+  <h1>CÚCUTA POR DÍAS</h1>
 </header>
 
-<section>
-  <div class="card">
-    <h2>CentralLoft 1</h2>
-    <p>
-      Disfruta de una estadía cómoda y fresca en pleno corazón de Cúcuta.
-      Apartamento amplio, moderno y a solo 1 cuadra del Parque Santander y
-      3 cuadras del Centro Comercial Ventura Plaza.
-    </p>
-  </div>
+<section class="container">
+  <p class="intro">
+    Loft Boutique en el corazón de Cúcuta, pensado para huéspedes que valoran
+    comodidad, diseño y una ubicación privilegiada.
+  </p>
 
-  <div class="card">
-    <h2>CentralLoft 2</h2>
-    <p>
-      Un espacio más pequeño y privado, ideal para descansar.
-      Ubicado en la esquina del Parque Santander y a 3 cuadras de Ventura Plaza.
-      Perfecto para viajes de negocios o turismo.
-    </p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>CentralLoft 1</h3>
+      <p>
+        <strong>Amplio, moderno y elegante.</strong> Ubicado a solo
+        <strong>1 cuadra del Parque Santander</strong> y
+        <strong>3 cuadras del Centro Comercial Ventura Plaza</strong>.
+      </p>
+      <p>
+        Ideal para parejas, ejecutivos o viajeros que buscan comodidad y espacio
+        en el centro de la ciudad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>CentralLoft 2</h3>
+      <p>
+        <strong>Más íntimo y privado.</strong> Perfecto para descansar después
+        de un día de trabajo o turismo.
+      </p>
+      <p>
+        Ubicado en la esquina del <strong>Parque Santander</strong>,
+        cerca de restaurantes, bancos y comercio.
+      </p>
+    </div>
+
   </div>
+</section>
+
+<section class="container">
+  <h2>Opiniones de nuestros huéspedes</h2>
+  <p class="intro">
+    Los visitantes destacan la limpieza, la excelente ubicación y la atención
+    personalizada.
+  </p>
 
   <div class="cta">
-    <h2>Opiniones de nuestros huéspedes</h2>
-    <p>
-      Nuestros visitantes destacan la excelente ubicación, limpieza
-      y atención personalizada. ⭐ 4.5 en Airbnb
+    <p class="rating">★ 4.5 estrellas en Airbnb</p>
+    <p style="font-style:italic;">
+      “Excelente ubicación, muy limpio y cómodo. Volveríamos sin dudarlo.”
     </p>
 
-    <p style="font-size:1.3rem; font-weight:bold; margin-top:2rem;">
+    <p style="margin-top:2rem; font-size:1.3rem; font-weight:600;">
       💰 Mejor precio reservando directo por WhatsApp
     </p>
 
@@ -56,6 +171,10 @@
     </a>
   </div>
 </section>
+
+<footer>
+  © 2026 Cúcuta por Días · Loft Boutique · Centro de Cúcuta
+</footer>
 
 </body>
 </html>
